@@ -9,11 +9,11 @@
 #top {
     width: 800px;
     background-color: #dcc9f4;
-    padding: 20px auto;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
 }
 .top-child {
+    margin: 20px auto;
     width: 20%;
     background-color: #ffd9df;
     display: inline-block;
@@ -21,9 +21,7 @@
 #middle {
     width: 800px;
     height: 800px;
-    padding: 20px auto;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 20px auto;
     background-color: #ffd9df;
     position: relative;
 }
