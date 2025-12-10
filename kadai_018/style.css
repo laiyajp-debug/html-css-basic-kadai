@@ -1,7 +1,15 @@
+/*
+合格基準「上下余白を取りつつ横並びで配置」が満たせていません。
+現在、#topにpadding: 20px 0;を使っていますが、課題ではmargin: 20px auto;で余白をとる指示となっています。
+このpaddingが影響し、画面全体のレイアウトや上下余白の基準画像と差が出ています。
+.top-childに上下の余白がなく、サンプル画像のイメージとずれています。
+#topの中央配置、p要素の横並び自体はできていますが、上下に20pxの余白（外側のmargin）にしましょう。
+*/
+
 #top {
     width: 800px;
     background-color: #dcc9f4;
-    padding: 20px 0;
+    padding: 20px auto;
     margin: 0 auto;
     text-align: center;
 }
@@ -9,12 +17,11 @@
     width: 20%;
     background-color: #ffd9df;
     display: inline-block;
-    margin: 0;
 }
 #middle {
     width: 800px;
     height: 800px;
-    padding: 20px 0;
+    padding: 20px auto;
     margin-right: auto;
     margin-left: auto;
     background-color: #ffd9df;
@@ -43,23 +50,6 @@
     top: 500px;
     left: 500px;    
 }
-
-
-/*
-div要素（id名「bottom」）に対する装飾
-横幅を800pxにします。
-高さを300pxにします。
-画面の中央に配置します。
-背景色を「#87ceeb」にします。
-div要素（id名「bottom-child01」「bottom-child02」「bottom-child03」）に対する共通の装飾
-横幅を400pxにします。
-高さを100pxにします。
-背景色を「#e5dcf0」にします。
-
-style.cssファイルにてpositionプロパティを利用し、以下画像のような配置になるようdiv要素（id名「bottom-child02」「bottom-child03」）のCSSコードを記入してください。
-div要素（id名「bottom-child02」）は、本来の表示場所の左から200pxずらして配置してください。
-div要素（id名「bottom-child03」）は、本来の表示場所の左から400pxずらして配置してください。
-*/
 
 #bottom {
     width: 800px;
